@@ -1,0 +1,28 @@
+---
+title: "Biomonitoring of Neonicotinoid pestcides"
+author: "Nan-Hung Hsieh"
+date: "`r format(Sys.time(), '%d&period; %B %Y')`"
+bibliography: Data/references.bib
+csl: Data/springer-basic-brackets-no-et-al.csl
+numbersections: true
+link-citations: yes
+linkcolor: blue
+linestretch: 2
+
+output:
+  word_document:
+    reference_docx: Data/manuscript-style.docx
+
+---
+
+```{r export, eval=F, echo=F}
+rmarkdown::render("summary.Rmd")
+```
+
+Abstract {#abstract .unnumbered}
+================================
+
+Neonicotinoids are synthetic insecticides used for pest control in agriculture [1–4], landscaping [5,6], and for treating domestic animals [7]
+
+References {#references .unnumbered}
+====================================
