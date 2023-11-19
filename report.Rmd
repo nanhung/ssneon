@@ -1,8 +1,9 @@
 ---
-title: "Biomonitoring and Toxicokintics of Neonicotinoid Pestcides Exposure"
+title: "Biomonitoring of Neonicotinoid Pestcides Exposure: Implication and Application"
 author: "Nan-Hung Hsieh"
 date: "`r Sys.Date()`"
-bibliography: Data/references.bib
+bibliography: data/references.bib
+csl: data/springer-basic-brackets-no-et-al.csl
 numbersections: true
 link-citations: yes
 linkcolor: blue
@@ -11,30 +12,31 @@ linestretch: 2
 output:
 #  pdf_document
   word_document:
-    reference_docx: Data/manuscript-style.docx
+    reference_docx: data/manuscript-style.docx
 ---
 
 ```{r export, eval=F, echo=F}
 rmarkdown::render("report.Rmd")
 ```
 
-Abstract {#abstract .unnumbered}
+Summary {#summary .unnumbered}
 ================================
 
-Neonicotinoids (NEOs) are synthetic insecticides used for flea control for household pets, residential landscaping and agriculture uses. It had been increasingly used for replacing older insecticides (e.g., organophosphates, methylcarbamates, and pyrethroids) due to their low acute mammalian toxicity [@tomizawa2005neonicotinoid]. However, recent research had identified the possible health risks of NEOs includes reproductive toxicology, neurotoxicity, immunotoxicity, hepatotoxicity/hepatocarcinogenicity, and genetic toxicity [@han2018human; @zhang2022human]. In recent years, NEOs and their metabolites had been detected through biomonitoring studies. @marfo2015relationship identified NEOs metabolites in suspected neonicotinoid pesticide poisoning patients from their urine samples that can be the biomarkers of exposure.
+Neonicotinoids (neonics) are synthetic insecticides used for flea control for household pets, residential landscaping and agriculture uses. It had been increasingly used for replacing older insecticides (e.g., organophosphates, methylcarbamates, and pyrethroids) due to their low acute mammalian toxicity [@tomizawa2005neonicotinoid]. However, recent research had identified the possible health risks of neonics includes reproductive toxicology, neurotoxicity, immunotoxicity, hepatotoxicity/hepatocarcinogenicity, and genetic toxicity [@han2018human; @zhang2022human]. In recent years, neonics and their metabolites had been detected through biomonitoring studies worldwide, including USA [@marfo2015relationship; @baker2019quantification; @chen2020nationwide; @li2020profiles]. These studies used urine sample as biomarker of neonics exposure.
 
-- The first biomonitoring survey of neonicotinoids in NHANES program was started at the of 2014-2015 and first published at January 2019 (https://wwwn.cdc.gov/Nchs/Nhanes/2015-2016/SSNEON_I.htm). Details regarding the analytical method, including quality control materials, calibration standards, reagent blanks, and method accuracy, are described by @baker2019quantification]. The investigation included four parent NEOs of acetamiprid, clothianidin, imidacloprid, and thiacloprid. Two metabolites of N-desmethyl-acetamiprid and 5-hydroxy-imidacloprid had also been selected in NHANES corresponding to their parent compounds of acetamiprid and imidacloprid. 
+The first national biomonitoring survey of neonics was conducted by (CDC) during 2014-2015 and first published at January 2019 (https://wwwn.cdc.gov/Nchs/Nhanes/2015-2016/SSNEON_I.htm). Details regarding the analytical method, including quality control materials, calibration standards, reagent blanks, and method accuracy, are described by @baker2019quantification. The investigation included four parent neonics of acetamiprid, clothianidin, imidacloprid, and thiacloprid. Two metabolites of N-desmethyl-acetamiprid and 5-hydroxy-imidacloprid had also been selected in NHANES corresponding to their parent compounds of acetamiprid and imidacloprid. It is worthwhile to mention that clothianidin is not only a parent compound, it is also a metabolite from thiamethoxam [@wrobel2022human].
 
-- After reanalyze the 2015-2016 NHANES data, neonicotinoids had detection frequencies of 0.3%, 7.6%, 4.4%, 0.04%, 21.5%, and 32.8% for acetamiprid, clothianidin, imidacloprid, thiacloprid, 5-hydroxy-imidacloprid, and N-desmethyl-acetamiprid, respectively (Appendix code).
-- The detection of neonicotinoid metabolites (N-desmethyl-acetamiprid and 5-hydroxyimidacloprid) more frequently and at much higher concentrations than the corresponding parent compounds suggests that the metabolites may be suitable biomarkers to assess background exposures [@ospina2019exposure]. 
-- Addition, neonicotinoids may convert to their metabolites in the environment causing the exposure to the metabolites themselves may also occur in degradation products. About half (49.1%) of the U.S. general population 3 years of age and older was recently exposed to neonicotinoids.
-- Imidacloprid was the most widely used neonicotinoid insecticide in the USA for agricultural purposes during 2015 and 2016. It is also detected in wastewater treatment plants in northern California [@north2004tracking].  Addition, the Environmental influences on Child Health Outcome (ECHO) Program observed neonicotinoid insecticides were highly detected (six detected and thiamethoxam and N-desmethyl-acetamiprid in more than 90%) among pregnant women and generally more highly detected among Hispanic women [@buckley2022exposure]. The study also found higher concentrations or detection frequencies in later years (from 2017 to 2020) of collection for several neonicotinoids (acetamiprid and clothianidin), which have been increasingly used in the U.S. as a replacement for organophosphate pesticides and other pyrethroids. It is worthnoting that neonicotinoid insecticides and their metabolites can pass through the Human Placenta [@zhang2022neonicotinoid].
-- The data also suggest metabolites are better biomarkers of background exposure than the compounds themselves.
-- Since the CDC public released the first neonicotinoids survey, this data had been used to conduct the research to understand the associations of neonicotinoids with insulin and glucose homeostasis parameters [@vuong2022associations], hematologic parameters [@yang2023associations], pathogenesis of adiposity [@godbole2022exploratory], and sex hormones [@jinxia2021exposure] in US general population, including children, adolescents, and adult.
-- PUR data
-- Expocast
-- ToxicoKinetic data
-- HAWC
+@ospina2019exposure conducted the initial analysis of these data and found that the detection frequencies of imidacloprid, clothianidin, 5-hydroxy imidacloprid, and N-desmethyl-acetamiprid are 4.3%, 7.7%, 19.7%, and 35%, respectively. Both acetamiprid and thiacloprid had relativly low detection rate (<0.5%). The detected rate of metabolites are much higher than the corresponding parent compounds suggests that the metabolites may be suitable biomarkers to assess background exposures. In addition, neonics may convert to their metabolites in the environment causing the exposure to the metabolites themselves may also occur in degradation products. Overall, about half (49.1%) of the U.S. general population 3 years of age and older was recently exposed to neonics. The data also suggested that metabolites are better biomarkers of background exposure than the compounds themselves. 
+
+DPR’s Pesticide Use Reporting shows that the highest uses neonics was imidacloprid (523,769, 378,619, and 330,638 pounds in 2019, 2020, and 2021), follow by acetamiprid (63,220.8, 68,377, and 61,068 pounds), and clothianidin (20,197, 24,448, 12,944 pounds). According to the Annual Agricultural Pesticide Use data from United States Geological Survey (https://water.usgs.gov/nawqa/pnsp/usage/maps/), imidacloprid was the most widely used neonicotinoid insecticide in the USA for agricultural purposes, which had higher uses (about 1 million pounds per year) compare to acetamiprid (about 0.1 million pounds per year). It is also detected in wastewater treatment plants in northern California [@north2004tracking]. The uses of clothianidin was lower than 0.5 million pounds in recent years (estimated after 2015). Thiacloprid was mainly uses on orchards and grapes, therefore had relatively lower ueses (< 2,000 pounds per year). 
+
+In addtion to national survey from CDC, the Environmental influences on Child Health Outcome (ECHO) Program observed that neonicotinoid insecticides were highly detected, especially thiamethoxam and N-desmethyl-acetamiprid in more than 90%, among pregnant women and generally more highly detected among Hispanic women [@buckley2022exposure]. The study also found higher concentrations or detection frequencies in later years (from 2017 to 2020) of collection for several neonics (acetamiprid and clothianidin), which have been increasingly used in the U.S. as a replacement for organophosphate pesticides and other pyrethroids. It is worthnoting that neonicotinoid insecticides and their metabolites can pass through the Human Placenta [@zhang2022neonicotinoid].
+
+Since the CDC public released the first neonics survey, this data had been used to conduct the statistical research to understand the associations of neonics with several human health impacts, such as insulin and glucose homeostasis parameters [@vuong2022associations], hematologic parameters [@yang2023associations], pathogenesis of adiposity [@godbole2022exploratory], and sex hormones [@jinxia2021exposure] in US general population, including children, adolescents, and adult.
+
+Except for the biomonitoring survey, the predicted intake can also be a reference in human exposure assessment. The Expocast program from U.S. Environmental Protection Agency provides the avaliable exposure predictions of neonics [@ring2018consensus]. The median (geometric mean) exposure rate (mg/kg bodyweight/day) for the general US population were 1.18e-6 (95%ile: 1.11e-3), 5.99e-7 (2.39e-4), 3.52e-7 (3.07e-4), and 1.66e-7 (1.64e-5) for thiacloprid, acetamiprid, clothianidin, and imidacloprid, respectively. These predictions were based on the meta-model using the Systematic Empirical Evaluation of Models framework with various predictors (e.g., production volume, uses probability in dietary, industrial, and residential), therefore might not reflect the actual exposure effictively. Thus, these predictions can be improved by incorporate the newly avaliable NHANES urine biomonitoring data with Bayesian inference approach [@stanfield2022bayesian]. Other than the high-throughput approch in exposure prediction mentioned above, the newly research also focus on applying the tradiotional low-throughput approch that focus on using the animal model with toxicokinetic data to extrapolate the human exposure and risk evaluation [@yi2023evaluation]. However, in their evaluation, the study didn't quantify the uncertainty and variability, which is a key to the human health risk-assessment of environmental chemicals [@zeise2013addressing].
+
+In conclusion, 
 
 References {#references .unnumbered}
 ====================================
