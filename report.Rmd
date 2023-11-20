@@ -3,7 +3,7 @@ title: "Biomonitoring of Neonicotinoid Pestcides Exposure: Implication and Appli
 author: "Nan-Hung Hsieh"
 date: "`r Sys.Date()`"
 bibliography: data/references.bib
-csl: data/springer-basic-brackets-no-et-al.csl
+#csl: data/springer-basic-brackets-no-et-al.csl
 numbersections: true
 link-citations: yes
 linkcolor: blue
@@ -12,7 +12,7 @@ linestretch: 2
 output:
 #  pdf_document
   word_document:
-    reference_docx: data/manuscript-style.docx
+#    reference_docx: data/manuscript-style.docx
 ---
 
 ```{r export, eval=F, echo=F}
@@ -32,11 +32,12 @@ The pesticide uses were briefly collected and summarized as follows to best unde
 
 In addition to national survey from CDC, the Environmental influences on Child Health Outcome (ECHO) Program investigated pregnant women across the United States and Puerto Rico and found that neonicotinoid insecticides were highly detected, especially thiamethoxam and N-desmethyl-acetamiprid in more than 90%, among pregnant women and generally more highly detected among Hispanic women [@buckley2022exposure]. The study also found higher concentrations or detection frequencies in later years (from 2017 to 2020) of collection for several neonics (acetamiprid and clothianidin), which have been increasingly used in the U.S. as a replacement for organophosphate pesticides and other pyrethroids. It is worthnoting that neonicotinoid insecticides and their metabolites can pass through the Human Placenta [@zhang2022neonicotinoid].
 
-Since the CDC public released the first neonics survey, this data had been used to conduct the statistical research to understand the associations of neonics with several human health impacts, such as insulin and glucose homeostasis parameters [@vuong2022associations], hematologic parameters [@yang2023associations], pathogenesis of adiposity [@godbole2022exploratory], and sex hormones [@jinxia2021exposure] in US general population, including children, adolescents, and adult.
+Since the CDC public released the first neonics survey, this data had been used to conduct the statistical research to understand the associations of neonics with several human health impacts, such as insulin and glucose homeostasis parameters [@vuong2022associations], hematologic parameters [@yang2023associations], pathogenesis of adiposity [@godbole2022exploratory], and sex hormones [@jinxia2021exposure] in US general population, including children, adolescents, and adult. All of these studies found that neonics concentrations had a statistically significant association with health impacts, indicating the concern of chronic adverse effects under the current exposure for the general US population.
 
-Except for the biomonitoring survey, the predicted intake can also be a reference in human exposure assessment. The Expocast program from U.S. Environmental Protection Agency provides the available exposure predictions of neonics [@ring2018consensus]. The median (geometric mean) exposure rate (mg/kg bodyweight/day) for the general US population were 1.18e-6 (95%ile: 1.11e-3), 5.99e-7 (2.39e-4), 3.52e-7 (3.07e-4), and 1.66e-7 (1.64e-5) for thiacloprid, acetamiprid, clothianidin, and imidacloprid, respectively. These predictions were based on the meta-model using the Systematic Empirical Evaluation of Models framework with various predictors (e.g., production volume, uses probability in dietary, industrial, and residential), therefore might not reflect the actual exposure effectively. Thus, these predictions can be improved by incorporate the newly available NHANES urine biomonitoring data with Bayesian inference approach [@stanfield2022bayesian]. Other than the high-throughput approch in exposure prediction mentioned above, the newly research also focus on applying the tradiotional low-throughput approch that focus on using the animal model with toxicokinetic data to extrapolate the human exposure and risk evaluation [@yi2023evaluation]. However, in their evaluation, the study didn't quantify the uncertainty and variability, which is a key to the human health risk-assessment of environmental chemicals [@zeise2013addressing].
+Except for the biomonitoring survey, the predicted intake can also be a reference in human exposure assessment. The Expocast program from U.S. Environmental Protection Agency provides the available exposure predictions of neonics [@ring2018consensus]. The median (geometric mean) exposure rate (mg/kg bodyweight/day) for the general US population were 1.18e-6 (95%ile: 1.11e-3), 5.99e-7 (2.39e-4), 3.52e-7 (3.07e-4), and 1.66e-7 (1.64e-5) in thiacloprid, acetamiprid, clothianidin, and imidacloprid, respectively. These predictions were based on the meta-model using the Systematic Empirical Evaluation of Models framework with various predictors (e.g., production volume, uses probability in dietary, industrial, and residential), therefore might not reflect the actual exposure effectively. Thus, these predictions can be further improved by incorporate the newly available NHANES urine biomonitoring data with Bayesian inference approach [@stanfield2022bayesian]. Other than the high-throughput approach in exposure prediction mentioned above, a recent research also focuses on applying the traditional low-throughput approach that focus on using the animal model with toxicokinetic data to extrapolate the human exposure and risk evaluation [@yi2023evaluation]. However, in their evaluation, the study didn't quantify the uncertainty and variability, which is a key to the human health risk-assessment of environmental chemicals [@zeise2013addressing]. The data gap existed in in-vivo and toxicokinetic study also provides the challenge in exposure and risk assessment.
 
-In conclusion, 
+In conclusion, neonics pesticides are gained more attention in recent years due to the widely uses from household to commercial applications to replace the traditional active ingredients. The studies related to neonics exposure investigation and toxicity in human also rapidly grow in the last decade to identify the relationship between the exposure and health effects. Although, more research is needed to identify biomarkers of exposure to neonics and to evaluate changes in neonics exposure over time. The available biomonitoring data is a useful resource for toxicokinetic model development and exposure reconstruction for better understanding of neonicotinoid exposure.
+
 
 References {#references .unnumbered}
 ====================================
