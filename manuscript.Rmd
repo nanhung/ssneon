@@ -1,0 +1,153 @@
+---
+title: "Probabilistic Risk Assessment of Neonicotinoid Exposure in the U.S. Population Using In Vitro-Derived Points of Departure and Toxicokinetic Modeling"
+author: "Nan-Hung Hsieh"
+date: "`r Sys.Date()`"
+bibliography: data/references.bib
+#csl: data/springer-basic-brackets-no-et-al.csl
+numbersections: true
+link-citations: yes
+linkcolor: blue
+linestretch: 2
+
+output:
+  word_document:
+#    reference_docx: data/manuscript-style.docx
+---
+
+```{r export, eval=F, echo=F}
+rmarkdown::render("manuscript.Rmd")
+```
+
+Summary {#summary .unnumbered}
+================================
+
+Neonicotinoids (neonics) are synthetic insecticides used for flea control for
+household pets, residential landscaping, and agriculture uses. It has been
+increasingly used for replacing older insecticides (e.g., organophosphates,
+methylcarbamates, and pyrethroids) due to their low acute mammalian toxicity
+[@tomizawa2005neonicotinoid]. However, recent research has identified the
+possible health risks of neonics including reproductive toxicology,
+neurotoxicity, immunotoxicity, hepatotoxicity/hepatocarcinogenicity, and
+genetic toxicity [@han2018human; @zhang2022human]. Recently, neonics and their
+metabolites have been detected through biomonitoring studies worldwide,
+including the USA [@marfo2015relationship; @baker2019quantification;
+@chen2020nationwide; @li2020profiles]. Urine samples are the most commonly used
+biomarkers of neonics exposure.
+
+The first national biomonitoring survey of neonics was conducted by (CDC)
+during 2014-2015 and first published in January 2019
+(https://wwwn.cdc.gov/Nchs/Nhanes/2015-2016/SSNEON_I.htm). Details regarding
+the analytical method, including quality control materials, calibration
+standards, reagent blanks, and method accuracy, are described by
+@baker2019quantification. The investigation included four parent neonics of
+acetamiprid, clothianidin, imidacloprid, and thiacloprid. Two metabolites of
+N-desmethyl-acetamiprid and 5-hydroxy-imidacloprid had also been selected in
+NHANES corresponding to their parent compounds of acetamiprid and imidacloprid.
+It is worthwhile to mention that clothianidin is not only a parent compound, it
+is also a metabolite from thiamethoxam [@wrobel2022human].
+
+The pesticide uses were briefly collected to best understand the relationship
+between biomonitoring results and exposure to neonics. The initial analysis was
+conducted in @ospina2019exposure. The study found that the detection
+frequencies of imidacloprid, clothianidin, 5-hydroxy imidacloprid, and
+N-desmethyl-acetamiprid are 4.3%, 7.7%, 19.7%, and 35%, respectively. Both
+acetamiprid and thiacloprid had relatively low detection rates (<0.5%). The
+result indicated that the detected rates of metabolites were much higher than
+the corresponding parent compounds, suggesting that the metabolites may be
+suitable biomarkers to assess background exposures. In addition to direct
+intake of the parent compound, neonics may convert to their metabolites in the
+environment, causing exposure to the metabolites themselves may also occur in
+degradation products. Overall, about half (49.1%) of the U.S. general
+population 3 years of age and older was recently exposed to neonics. The data
+also recommended that metabolites are better biomarkers of background exposure
+than the compounds themselves.
+
+The pesticide uses were briefly collected and summarized as follows to best
+understand the relationship between biomonitoring results and potential
+exposure to neonics. DPR’s Pesticide Use Reporting shows that the highest use
+of neonics was imidacloprid (523,769, 378,619, and 330,638 pounds in 2019,
+2020, and 2021), followed by acetamiprid (63,220.8, 68,377, and 61,068 pounds),
+and clothianidin (20,197, 24,448, 12,944 pounds)
+(https://www.cdpr.ca.gov/docs/pur/purmain.htm). According to the Annual
+Agricultural Pesticide Use data from the United States Geological Survey
+(https://water.usgs.gov/nawqa/pnsp/usage/maps/), imidacloprid was the most
+widely used neonicotinoid insecticide in the USA for agricultural purposes,
+which had higher uses (about 1 million pounds per year) compared to acetamiprid
+(about 0.1 million pounds per year). It is also detected in wastewater
+treatment plants in northern California [@north2004tracking]. The use of
+clothianidin was lower than 0.5 million pounds recently (estimated after 2015).
+Thiacloprid was mainly used in orchards and grapes (> 95%) and therefore had
+relatively lower uses (< 2,000 pounds per year).
+
+In addition to the national survey from CDC, the Environmental influences on
+Child Health Outcome (ECHO) Program investigated pregnant women across the
+United States and Puerto Rico and found that neonicotinoid insecticides were
+highly detected, especially thiamethoxam and N-desmethyl-acetamiprid in more
+than 90%, among pregnant women and generally more highly detected among
+Hispanic women [@buckley2022exposure]. The study also found higher
+concentrations or detection frequencies in later years (from 2017 to 2020) of
+collection for several neonics (acetamiprid and clothianidin), which have been
+increasingly used in the U.S. as a replacement for organophosphate pesticides
+and other pyrethroids. It is worth noting that neonicotinoid insecticides and
+their metabolites can pass through the Human Placenta
+[@zhang2022neonicotinoid].
+
+Since the CDC public released the first neonics survey, this data has been used
+to conduct the statistical research to understand the associations of neonics
+with numerous human health impacts, such as insulin and glucose homeostasis
+parameters [@vuong2022associations], hematologic parameters
+[@yang2023associations], pathogenesis of adiposity [@godbole2022exploratory],
+and sex hormones [@jinxia2021exposure] in the US general population, including
+children, adolescents, and adult. All of these studies found that neonics
+concentrations had a statistically significant association with health impacts,
+indicating the concern of chronic adverse effects under the current exposure
+for the general US population.
+
+Except for the biomonitoring survey, the predicted intake can also be
+a reference in human exposure assessment. The Expocast program from the U.S.
+Environmental Protection Agency provides the available exposure predictions of
+neonics [@ring2018consensus]. The median (geometric mean) exposure rate (mg/kg
+body weight/day) for the general US population were 1.18e-6 (95%ile: 1.11e-3),
+5.99e-7 (2.39e-4), 3.52e-7 (3.07e-4), and 1.66e-7 (1.64e-5) in thiacloprid,
+acetamiprid, clothianidin, and imidacloprid, respectively. These predictions
+were based on the metamodel using the Systematic Empirical Evaluation of Models
+framework with various predictors (e.g., production volume, uses probability in
+dietary, industrial, and residential), therefore might not reflect the actual
+exposure effectively. Thus, these predictions can be further improved by
+incorporating the newly available NHANES urine biomonitoring data with the
+Bayesian inference approach [@stanfield2022bayesian]. Other than the
+high-throughput approach in exposure prediction mentioned above, a recent
+research also focuses on applying the traditional low-throughput approaches
+that focus on using the animal model with toxicokinetic data to extrapolate the
+human exposure and risk evaluation [@yi2023evaluation]. However, in their
+evaluation, the study didn't quantify the uncertainty and variability, which is
+a key to the human health risk-assessment of environmental chemicals
+[@zeise2013addressing]. The data gap existed in in-vivo and toxicokinetic
+studies also provides the challenge in exposure and risk assessment.
+
+In conclusion, neonics pesticides have gained more attention recently due to
+their widespread use from household to commercial applications to replace the
+traditional active ingredients. The studies related to neonics exposure
+investigation and toxicity in human also rapidly grown in the last decade to
+identify the relationship between the exposure and health effects. Although,
+more research is needed to identify biomarkers of exposure to neonics and to
+evaluate changes in neonics exposure over time. The available biomonitoring
+data is a useful resource for toxicokinetic model development and exposure
+reconstruction for deeper understanding of neonicotinoid exposure.
+
+
+WorkFlow {#workflow}
+=====================
+
+High throughput and toxicokinetic model was applied to estimate the daily intake via urinary metabolites from NHANES database.
+Compare exposure with other prediction tools.
+Hazard identification to evaluate the potential toxicity and collect the dose-response datasets from ToxCast and ICE in vitro studies.
+Bayesian dose-response model to derive AC10 as POD.
+Compare in vivo- and in-vitro derived POD
+Toxicokinetic model was used to convert the PODs into the HED with a reverse dosimetry approach.
+Combined risk of multiple neonicotinoid pesticide.
+
+
+
+References {#references .unnumbered}
+====================================
