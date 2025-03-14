@@ -1,5 +1,5 @@
 ---
-title: "Probabilistic Risk Assessment of Neonicotinoid Exposure in the U.S. Population Using In Vitro-Derived Points of Departure and Toxicokinetic Modeling"
+title: "Assessing Neonicotinoid Exposure Using Biomonitoring Data-Driven Toxicokinetic Modeling"
 author: "Nan-Hung Hsieh"
 date: "`r Sys.Date()`"
 bibliography: data/references.bib
