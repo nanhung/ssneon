@@ -1,8 +1,15 @@
-library(readxl)  # read_excel
-library(foreign) # read.xport
-library(survey)  # svydesign
-library(dplyr)   # For efficient data manipulation
-library(skimr)   # For detailed summary statistics
+# List of packages
+packages <- c("readxl",  # read excel file
+              "foreign", # read .XPT file
+              "survey",  # svydesign
+              "dplyr",   # Data manipulation
+              "skimr")   # Summary statistics
+
+# Install missing packages and load them
+invisible(lapply(packages, function(x) {
+    if (!require(x, character.only = TRUE)) install.packages(x)
+    library(x, character.only = TRUE)
+}))
 
 # Load NHANES codes from NHANES Excel file
 codes_file <- "data/NHANEScodes_file.xlsx"

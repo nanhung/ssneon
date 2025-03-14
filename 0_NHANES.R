@@ -4,7 +4,16 @@
 # - Updated for NHANES data site changes (02/2025)
 # - Assumes NHANEScodes_file.xlsx contains codes (sheet 1) and weights (sheet 2)
 
-library(readxl)  # For reading Excel files
+
+# List of packages
+pkgs <- c("readxl") # For reading Excel files
+
+
+# Install missing packages and load them
+invisible(lapply(pkgs, function(x) {
+    if (!require(x, character.only = TRUE)) install.packages(x)
+    library(x, character.only = TRUE)
+}))
 
 #' Download NHANES Data Files
 #'
