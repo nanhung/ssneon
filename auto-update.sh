@@ -14,9 +14,9 @@ echo "\n####    Commit message    ####"
 
 # Committing to the local repository with a message containing the time details and commit text
 
-#read input
-#git commit -m "$input"
-git commit -m auto-update
+read input
+git commit -m "$input"
+# git commit -m auto-update
 
 # Push the local files to github
 
