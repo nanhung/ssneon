@@ -3,20 +3,14 @@ title: "Assessing Neonicotinoid Exposure Using Biomonitoring Data-Driven Toxicok
 author: "Nan-Hung Hsieh"
 date: "`r Sys.Date()`"
 bibliography: data/references.bib
-#csl: data/springer-basic-brackets-no-et-al.csl
 numbersections: true
 link-citations: yes
 linkcolor: blue
 linestretch: 2
-
 output:
   word_document:
-#    reference_docx: data/manuscript-style.docx
 ---
 
-```{r export, eval=F, echo=F}
-rmarkdown::render("manuscript.Rmd")
-```
 
 Summary {#summary .unnumbered}
 ================================
@@ -125,6 +119,12 @@ a key to the human health risk-assessment of environmental chemicals
 [@zeise2013addressing]. The data gap existed in in-vivo and toxicokinetic
 studies also provides the challenge in exposure and risk assessment.
 
+
+Dietary exposure assessment is a part of the regulatory process for each food-use pesticide in federal and state level [@silva_human_2010]. 
+
+Toxicokinetics
+
+
 In conclusion, neonics pesticides have gained more attention recently due to
 their widespread use from household to commercial applications to replace the
 traditional active ingredients. The studies related to neonics exposure
@@ -136,16 +136,16 @@ data is a useful resource for toxicokinetic model development and exposure
 reconstruction for deeper understanding of neonicotinoid exposure.
 
 
-WorkFlow {#workflow}
+Methods {#methods}
 =====================
 
-High throughput and toxicokinetic model was applied to estimate the daily intake via urinary metabolites from NHANES database.
-Compare exposure with other prediction tools.
-Hazard identification to evaluate the potential toxicity and collect the dose-response datasets from ToxCast and ICE in vitro studies.
-Bayesian dose-response model to derive AC10 as POD.
-Compare in vivo- and in-vitro derived POD
-Toxicokinetic model was used to convert the PODs into the HED with a reverse dosimetry approach.
-Combined risk of multiple neonicotinoid pesticide.
+- High throughput and toxicokinetic model was applied to estimate the daily intake via urinary metabolites from NHANES database. 
+- Compare exposure with other prediction tools.
+- Hazard identification to evaluate the potential toxicity and collect the dose-response datasets from ToxCast and ICE in vitro studies.
+- Bayesian dose-response model to derive AC10 as POD.
+- Compare in vivo- and in-vitro derived POD
+- Toxicokinetic model was used to convert the PODs into the HED with a reverse dosimetry approach.
+- Combined risk of multiple neonicotinoid pesticide.
 
 
 

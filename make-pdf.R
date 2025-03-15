@@ -3,4 +3,4 @@ if (!require("rmarkdown", quietly = TRUE)) {
     install.packages("rmarkdown")
 }
 
-rmarkdown::render("manuscript.Rmd")
+rmarkdown::render("manuscript.qmd")
