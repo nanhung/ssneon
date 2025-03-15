@@ -148,6 +148,10 @@ Methods {#methods}
 - Combined risk of multiple neonicotinoid pesticide.
 
 
+::: {.notes}
+Framework for Incorporating Human Epidemiologic & Incident Data in Risk Assessments for Pesticides (US EPA, 2016b), US EPA states that quantitative biomonitoring is more advantageous than other exposure assessment methods.
+:::
+
 
 References {#references .unnumbered}
 ====================================
