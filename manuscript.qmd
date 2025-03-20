@@ -1,5 +1,5 @@
 ---
-title: "Assessing Neonicotinoid Exposure Using Biomonitoring Data-Driven Toxicokinetic Modeling"
+title: "Biomonitoring and Toxicokintics of Neonicotinoid Pestcides Exposure"
 author: "Nan-Hung Hsieh"
 date: "`r Sys.Date()`"
 bibliography: data/references.bib
@@ -10,7 +10,6 @@ linestretch: 2
 output:
   word_document:
 ---
-
 
 Summary {#summary .unnumbered}
 ================================
@@ -29,8 +28,7 @@ including the USA [@marfo2015relationship; @baker2019quantification;
 biomarkers of neonics exposure.
 
 The first national biomonitoring survey of neonics was conducted by (CDC)
-during 2014-2015 and first published in January 2019
-(https://wwwn.cdc.gov/Nchs/Nhanes/2015-2016/SSNEON_I.htm). Details regarding
+during 2014-2015 and first published in January 2019. Details regarding
 the analytical method, including quality control materials, calibration
 standards, reagent blanks, and method accuracy, are described by
 @baker2019quantification. The investigation included four parent neonics of
@@ -119,12 +117,6 @@ a key to the human health risk-assessment of environmental chemicals
 [@zeise2013addressing]. The data gap existed in in-vivo and toxicokinetic
 studies also provides the challenge in exposure and risk assessment.
 
-
-Dietary exposure assessment is a part of the regulatory process for each food-use pesticide in federal and state level [@silva_human_2010]. 
-
-Toxicokinetics
-
-
 In conclusion, neonics pesticides have gained more attention recently due to
 their widespread use from household to commercial applications to replace the
 traditional active ingredients. The studies related to neonics exposure
@@ -134,23 +126,6 @@ more research is needed to identify biomarkers of exposure to neonics and to
 evaluate changes in neonics exposure over time. The available biomonitoring
 data is a useful resource for toxicokinetic model development and exposure
 reconstruction for deeper understanding of neonicotinoid exposure.
-
-
-Methods {#methods}
-=====================
-
-- High throughput and toxicokinetic model was applied to estimate the daily intake via urinary metabolites from NHANES database. 
-- Compare exposure with other prediction tools.
-- Hazard identification to evaluate the potential toxicity and collect the dose-response datasets from ToxCast and ICE in vitro studies.
-- Bayesian dose-response model to derive AC10 as POD.
-- Compare in vivo- and in-vitro derived POD
-- Toxicokinetic model was used to convert the PODs into the HED with a reverse dosimetry approach.
-- Combined risk of multiple neonicotinoid pesticide.
-
-
-::: {.notes}
-Framework for Incorporating Human Epidemiologic & Incident Data in Risk Assessments for Pesticides (US EPA, 2016b), US EPA states that quantitative biomonitoring is more advantageous than other exposure assessment methods.
-:::
 
 
 References {#references .unnumbered}
